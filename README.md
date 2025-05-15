@@ -30,6 +30,7 @@
 * Using `librosa.display.waveshow` and `IPython.display.Audio`
 * Plotting **Short-Term Fourier Transform**
 
+
 ---
 
 ## Data Augmentation
@@ -99,17 +100,14 @@
 ### Training with Adam
 
 * Learning Rate: **0.01**, **0.001**
-* Output: *A graph of a graph of a graph* (AI-generated content disclaimer)
 
 ### Training with SGD
 
 * Learning Rate: **0.01**, **0.001**
-* Output: *A graph of a graph of a graph* (AI-generated content disclaimer)
 
 ### Training with RMSprop
 
 * Learning Rate: **0.01**, **0.001**
-* Output: *A graph of a graph of a graph* (AI-generated content disclaimer)
 
 ---
 
@@ -119,6 +117,8 @@
 * **Learning Rate:** 0.001
 * **Epochs:** 100
 
+![alt text](./docs/1.png)
+
 ### Evaluation
 
 * **Accuracy:** 0.7697
@@ -126,7 +126,7 @@
 * **F1 Score (Macro):** 0.7686
 * **F1 Score (Weighted):** 0.7692
 
-*Confusion Matrix Diagram* (AI-generated content disclaimer)
+![alt text](./docs/2.png)
 
 ---
 
@@ -137,17 +137,11 @@
 * **F1 Score (Macro):** 0.7557
 * **F1 Score (Weighted):** 0.7557
 
-*Most Confusing Class:* Disgust predicted as Sad
-*Confusion Matrix Diagram* (AI-generated content disclaimer)
+![alt text](./docs/3.png)
 
 ---
 
 ## 2D Conv
-
-### Links
-
-* 1st Version
-* 2nd Version
 
 ### Architecture & Hyperparameter Tuning
 
@@ -162,5 +156,14 @@
 | (512, 256, 256, 128, 64)  | \[(3, 5), (3, 5), (3, 5), (3, 3), (3, 3)] | 0.1839  | 0.0590   |
 | (512, 256, 256, 128, 64)  | \[(5, 5), (5, 5), (3, 5), (3, 3), (1, 3)] | 0.3257  | 0.1756   |
 | (512, 512, 512, 256, 128) | \[(1, 3), (3, 5), (3, 5), (3, 3), (3, 3)] | 0.2720  | 0.0614   |
+
+---
+
+## Evaluate Model on Test Data
+
+Test Accuracy: 0.5271
+Test F1 Score: 0.5317
+
+![alt text](./docs/4.png)
 
 ---
