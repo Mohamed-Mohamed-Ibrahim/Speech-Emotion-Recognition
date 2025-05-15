@@ -1,8 +1,29 @@
 ---
 
-# Pattern - Lab 3
+# Speech Emotion Recognition
 
-**Colab:** [Google Colab Link](https://colab.research.google.com/drive/1nOG9a6u3uuNlBsVXu1CkyhdV1STX7pC8?usp=sharing)
+Colab Link: 
+[Google Colab Link](https://colab.research.google.com/drive/1nOG9a6u3uuNlBsVXu1CkyhdV1STX7pC8?usp=sharing)
+
+---
+
+## Problem Statement
+
+Goal:
+- Build a Speech Emotion Recognition (SER) system to classify emotions from audio using the CREMA-D dataset.
+
+Tasks:
+- Data Loading: Load and explore the dataset, listen to samples, and plot waveforms.
+- Feature Extraction:
+  - Time/Frequency domain: e.g., zero-crossing rate, energy
+  - Mel-spectrograms for image-like input
+- Model Building:
+  - Use 1D CNNs for 1D features and 2D CNNs for spectrograms
+- Train/test split:
+  - 70%/30%, with 5% of training for validation (set seed = 42, stratified)
+- Evaluation:
+  - Report accuracy and F1 scores
+  - Plot confusion matrices and identify most confusing classes
 
 ---
 
