@@ -164,5 +164,3 @@
 | (512, 512, 512, 256, 128) | \[(1, 3), (3, 5), (3, 5), (3, 3), (3, 3)] | 0.2720  | 0.0614   |
 
 ---
-
-Let me know if you want this saved to a downloadable `.md` file.
