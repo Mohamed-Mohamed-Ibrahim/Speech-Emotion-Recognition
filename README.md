@@ -2,7 +2,6 @@
 
 # Speech Emotion Recognition
 
-Colab Link: 
 [Google Colab Link](https://colab.research.google.com/drive/1nOG9a6u3uuNlBsVXu1CkyhdV1STX7pC8?usp=sharing)
 
 ---
