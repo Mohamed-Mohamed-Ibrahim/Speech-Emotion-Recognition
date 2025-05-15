@@ -1,4 +1,3 @@
-
 ---
 
 # Pattern - Lab 3
@@ -19,28 +18,27 @@
 
 ## Data Loading
 
-* **Import main data**
-* Using **Kaggle** to import dataset
-* Reading **CREMA** dataset only
+- **Import main data**
+- Using **Kaggle** to import dataset
+- Reading **CREMA** dataset only
 
 ---
 
 ## Listen to and Plot Waveform of Each Class
 
-* Using `librosa.display.waveshow` and `IPython.display.Audio`
-* Plotting **Short-Term Fourier Transform**
-
+- Using `librosa.display.waveshow` and `IPython.display.Audio`
+- Plotting **Short-Term Fourier Transform**
 
 ---
 
 ## Data Augmentation
 
-* Adding:
+- Adding:
 
-  * Noise
-  * Stretching
-  * Shifting
-  * Pitch shifting
+  - Noise
+  - Stretching
+  - Shifting
+  - Pitch shifting
 
 ---
 
@@ -48,13 +46,13 @@
 
 ### 1D
 
-* Extract features using **Librosa**
+- Extract features using **Librosa**
 
 ### 2D
 
-* Using **TorchAudio**
-* Convert signal to **mel spectrogram**
-* Convert spectrogram into **decibels**
+- Using **TorchAudio**
+- Convert signal to **mel spectrogram**
+- Convert spectrogram into **decibels**
 
 ---
 
@@ -62,8 +60,8 @@
 
 ### Data Processing
 
-* Apply **Normalization** using `scikit-learn StandardScaler`
-* Apply **One-Hot Encoding**
+- Apply **Normalization** using `scikit-learn StandardScaler`
+- Apply **One-Hot Encoding**
 
 ### Architecture
 
@@ -89,9 +87,9 @@
 
 #### 🔗 Fully Connected Block (Classification)
 
-* Flatten
-* `Linear(128 × 7 → 512)` → ReLU → `BatchNorm1d(512)`
-* `Linear(512 → 6)`
+- Flatten
+- `Linear(128 × 7 → 512)` → ReLU → `BatchNorm1d(512)`
+- `Linear(512 → 6)`
 
 ---
 
@@ -99,32 +97,32 @@
 
 ### Training with Adam
 
-* Learning Rate: **0.01**, **0.001**
+- Learning Rate: **0.01**, **0.001**
 
 ### Training with SGD
 
-* Learning Rate: **0.01**, **0.001**
+- Learning Rate: **0.01**, **0.001**
 
 ### Training with RMSprop
 
-* Learning Rate: **0.01**, **0.001**
+- Learning Rate: **0.01**, **0.001**
 
 ---
 
 ## Best Optimizer
 
-* **Optimizer:** Adam
-* **Learning Rate:** 0.001
-* **Epochs:** 100
+- **Optimizer:** Adam
+- **Learning Rate:** 0.001
+- **Epochs:** 100
 
 ![alt text](./docs/1.png)
 
 ### Evaluation
 
-* **Accuracy:** 0.7697
-* **F1 Score (Micro):** 0.7697
-* **F1 Score (Macro):** 0.7686
-* **F1 Score (Weighted):** 0.7692
+- **Accuracy:** 0.7697
+- **F1 Score (Micro):** 0.7697
+- **F1 Score (Macro):** 0.7686
+- **F1 Score (Weighted):** 0.7692
 
 ![alt text](./docs/2.png)
 
@@ -132,10 +130,10 @@
 
 ## Evaluate Model on Test Data
 
-* **Accuracy:** 0.7559
-* **F1 Score (Micro):** 0.7559
-* **F1 Score (Macro):** 0.7557
-* **F1 Score (Weighted):** 0.7557
+- **Accuracy:** 0.7559
+- **F1 Score (Micro):** 0.7559
+- **F1 Score (Macro):** 0.7557
+- **F1 Score (Weighted):** 0.7557
 
 ![alt text](./docs/3.png)
 
@@ -156,6 +154,8 @@
 | (512, 256, 256, 128, 64)  | \[(3, 5), (3, 5), (3, 5), (3, 3), (3, 3)] | 0.1839  | 0.0590   |
 | (512, 256, 256, 128, 64)  | \[(5, 5), (5, 5), (3, 5), (3, 3), (1, 3)] | 0.3257  | 0.1756   |
 | (512, 512, 512, 256, 128) | \[(1, 3), (3, 5), (3, 5), (3, 3), (3, 3)] | 0.2720  | 0.0614   |
+
+![alt text](./docs/5.png)
 
 ---
 
